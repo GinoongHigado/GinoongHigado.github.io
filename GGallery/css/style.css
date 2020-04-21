@@ -1,0 +1,341 @@
+/* @import url('https//fonts.googleapis.com/css?family=Poppins:400,500,700'); */
+@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+
+html,body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  padding: .8rem;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+  font-weight: bolder;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white !important;
+}
+
+.active a{
+  background-color: #555;
+  color: whitesmoke !important;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+.carousel-caption h1 {
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-caption h2{
+  font-size: 200%;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px #ffffff;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  bottom: 0;
+  top: 0;
+  left: 2rem;
+  right: 0;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+#slides{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.whereto p{
+  position: relative;
+  font-size: 1rem;
+  top: 2rem;
+}
+
+p.lead {
+  font-family: 'Sriracha', cursive;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+}
+
+.h3 {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.shsimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lightskyblue {
+  background-color: #87CEFA;
+}
+
+.aliceblue{
+  background-color: 	#F0F8FF;
+}
+
+
+.section {
+  background-color: #F0FFF0;
+}
+
+.reserved {
+  background-color: #778899;
+}
+
+
+
+/* .bg-light {
+  background-color: transparent !important;
+} */
+
+img.size {
+  height: 2rem;
+  margin: 0 1.1rem 0 0;
+}
+
+/* Index */
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+
+.fa-twitter {
+  color: #00aced;
+}
+
+.fa-instagram {
+  color: #517fa4;
+}
+
+.fa-google-plus-g {
+  color: #dd4b39;
+}
+
+.fa-youtube {
+  color: #bb0000;
+}
+
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-google-plus-g:hover,
+.fa-youtube:hover {
+  color: #d5d5d5;
+}
+
+/* Community */
+
+.imgteam {
+  margin-left: 33rem;
+  top: 2rem;
+  position: relative;
+  /* margin-bottom: -2rem; */
+}
+
+
+/* Gallery */
+
+#secdiv, .gallery {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+}
+
+
+.gallery {
+  margin: 1rem 0 1rem 0;
+}
+
+/* Shs */
+
+.imgshs {
+  margin-left: 31rem;
+  top: 2rem;
+  position: relative;
+}
+
+
+#myImg0,
+#myImg1 {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg0:hover,
+#myImg1:hover,
+#myImg2:hover {
+  opacity: 0.7;
+}
+
+.modal-content0,
+.modal-content1,
+.modal-content2 {
+  margin: 0;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#caption0,
+#caption1,
+#caption2 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+}
+
+.modal-content0,
+.modal-content1,
+.modal-content2 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* The Modal (background) */
+.modal0,
+.modal1,
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 4rem; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close0,
+.close1,
+.close2 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close0:hover,
+.close0:focus,
+.close1:hover,
+.close1:focus,
+.close2:hover,
+.close2:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Gallery */
+
+#logo {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYlJREFUeNrcV4FtgzAQBJQB3AlCN0gmiNkgnaBhg25QMUHSCUInKJkgZgNGyAhskP6r58qJsCEUE5qXLMvI8t//359NGDhMytWepk3gz7LQ4VzSdAw8WxTc2WYd9ymlymQop5Td87/IQEVDR137AhAahPNlFZWvtpVgRgtmulcA5CO5BmFyQHou8wJjmm3YB0B9TwAp1fKJ5mcap7EB7Mh5/qNKJTv/GAuAQsSHq+/zMaQ4R6RfzGRqpwJrZvWbbwDaGeuEwLc1hmm6HNshS8BMTxG5aDkjxv5sSAAFIo07nsPR7/p0RuSI6vWGcwQ4UQwFQPaQ6FVDp0z/RTRJAMxovj75rbDsqP0pnmyVjYikIawjR1z/TgA5HaYguRXEqO29qCXa1Y6iiVuRZaNr3dQxrrUTfGg+j8wfBtwBJ+hBm8pxBj7hfNsAWpdncZm60grA5EOG/n5H+mIAEx2y8wtAl/XWLhCIiCW5pPECciZ9ROcvPyacuj3Y/Pg6MDqAzLOP3EZAtm8BBgDqc3bEpb6xyQAAAABJRU5ErkJggg==') no-repeat center center transparent;
+	background-size: contain;
+	width: 25px;
+	height: 25px;
+	display: inline-block;	
+	position: relative;
+	bottom: -4px;
+	left: -4px;
+}
+
+.elem, .elem * {
+	box-sizing: border-box;
+	margin: 0 !important;	
+}
+.elem {
+	display: inline-block;
+	font-size: 0;
+	width: 33%;
+	border: 20px solid transparent;
+	border-bottom: none;
+	background: #fff;
+	padding: 10px;
+	height: auto;
+	background-clip: padding-box;
+}
+.elem > span {
+	display: block;
+	cursor: pointer;
+	height: 0;
+	padding-bottom:	70%;
+	background-size: cover;	
+	background-position: center center;
+}
+
+/* LIGHTBOX FADING SHOW/HIDE EFFECT (as explained in documentation) */
+
+.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+.lcl_fade_oc.lcl_pre_show #lcl_window,
+.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+.lcl_fade_oc.lcl_is_closing #lcl_window {
+	opacity: 0 !important;
+}
+.lcl_fade_oc.lcl_is_closing #lcl_overlay {
+	-webkit-transition-delay: .15s !important; 
+	transition-delay: .15s !important;
+}
+
+
+@media only screen and (max-width: 700px){
+  .modal-content0,
+  .modal-content1,
+  .modal-content2 {
+    width: 100%;
+  }
+}
+

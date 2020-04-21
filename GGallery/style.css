@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-brand {
+    font-family: Raleway;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+.elem a:link {
+    color:#414958;
+    text-decoration:underline
+}
+
+header {
+    background-color:#fdfdfd;
+    margin-bottom: 5rem;
+}
+
+.section {
+  font-family: 'Sriracha', cursive;
+  padding: 2rem 0rem 2rem 0rem;
+  background-color: lightcyan;
+}
+
+img.logo {
+  margin-left: 31rem;
+  top: 2rem;
+  position: relative;
+}
+
+.elem, .elem * {
+	box-sizing: border-box;
+	margin: 0 !important;	
+}
+
+.elem {
+	display: inline-block;
+	width: 33%;
+	border: 15px solid transparent;
+  border-bottom: none;
+  background: rgb(84,153,199);
+  background: linear-gradient(90deg, rgba(84,153,199,1) 0%, rgba(244,208,63,1) 35%, rgba(231,76,60,1) 100%);
+	padding: 10px;
+  height: auto;
+	background-clip: padding-box;
+}
+
+.elem > span {
+	display: block;
+  cursor: grab;
+	height: 0;
+	padding-bottom:	100%;
+	background-size: cover;
+	background-position: center;
+}
+
+.navbar {
+  padding: .8rem;
+}
+
+.navbar-nav li {
+  font-weight: bolder;
+  padding: 5px 20px 5px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white !important;
+}
+
+.active a{
+  background-color: #555;
+  color: whitesmoke !important;
+}
+
+.nav-link {
+  font-size: 1.1em !important;
+}
+
+/* Footer */
+
+footer {
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  font-family: Raleway;
+}
+
+footer p,h5 {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+a.mailto {
+  color: whitesmoke;
+}
+
+.footer-copyright {
+  color: whitesmoke !important;
+}
+
+.social a {
+  color: whitesmoke;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  display: block;
+}
+  
+.fa-facebook {
+    color: #3b5998;
+    font-size: 1.5rem;
+}
+  
+.fa-twitter {
+    color: #00aced;
+    font-size: 1.5rem;
+}
+  
+.fa-instagram {
+    color: #517fa4;
+    font-size: 1.5rem;
+}
+  
+.fa-google-plus-g {
+    color: #dd4b39;
+}
+  
+.fa-youtube {
+    color: #bb0000;
+    font-size: 1.5rem;
+}
+
+  .fa-facebook:hover,
+  .fa-twitter:hover,
+  .fa-instagram:hover,
+  .fa-youtube:hover {
+    color: #d5d5d5;
+  }
+
+hr.light {
+    border-top: 1px solid whitesmoke;
+    width: 75%;
+    margin-top: 0.9rem;
+    margin-bottom: 1rem;
+}
+  
+  hr.light-100 { 
+    border-top: 1px solid whitesmoke;
+    width: 100%;
+    margin-top: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+.lcl_fade_oc.lcl_pre_show #lcl_window,
+.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+.lcl_fade_oc.lcl_is_closing #lcl_window {
+	opacity: 0 !important;
+}
+
+.lcl_fade_oc.lcl_is_closing #lcl_overlay {
+	-webkit-transition-delay: .15s !important; 
+	transition-delay: .15s !important;
+}
+
+@media screen and (max-width:992px){ 
+    .content>div {
+        width: 100%!important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  
+  img.logo {
+    margin-left: 13rem;
+  }
+
+  img.size {
+    margin-right: 23rem;
+  }
+  
+  .elem {
+    width: 30%;
+    height: auto;
+  }
+  
+  .navbar {
+    padding: .5rem;
+  }
+  
+  .navbar-nav li {
+    padding-right: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+  
+  .nav-link {
+    font-size: 0.9rem !important;
+  }
+  
+  footer p, a{
+    font-size: 15px;
+  }
+  
+  .social a {
+    font-size: 15px;
+    line-height: 2rem;
+  }
+  
+  .footer-copyright h5{
+    font-size: 15px;
+  }
+  
+  }
+
+  
+  @media screen and (max-width: 576px) {
+
+    .elem {
+      width: 30%;
+      height: auto;
+    }
+
+    img.logo {
+      margin-left: 7rem;
+    }
+
+    img.size {
+      margin-right: 23rem;
+    }
+    
+    .navbar {
+      padding: .5rem;
+    }
+    
+    .navbar-nav li {
+      padding-right: 10px;
+    }
+    
+    .navbar-brand {
+      font-size: 1.1rem;
+    }
+    
+    .nav-link {
+      font-size: 0.9rem !important;
+    }
+  
+    footer h5 {
+      font-size: 15px;
+    }
+    
+    footer p, a{
+      font-size: 10px;
+    }
+    
+    .social a {
+      font-size: 10px;
+      line-height: 1.2rem;
+    }
+  
+    .footer-copyright h5{
+      font-size: 10px;
+    }
+  
+  }
+
+  @media screen and (max-width: 480px) {
+
+    header {
+      margin-bottom: 3rem;
+    }
+
+    .elem {
+      width: 30%;
+      padding: 5px;
+    }
+    
+    p.lead {
+      margin-top: 2rem;
+      font-size: 1rem;
+      text-align: justify;
+   }
+
+   img.logo {
+     margin-left: 4rem;
+   }
+
+   img.size {
+     margin-right: 20rem;
+   }
+}
+
+
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
